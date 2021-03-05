@@ -26,7 +26,6 @@ let makeAdmin = async(email)=>{
     products:[],
   })
   let savedSeller = await sellerInstance.save()
-  console.log(savedSeller);
   foundUser.isSeller=true;
   foundUser.Seller=savedSeller._id;
   let savedUser = await foundUser.save();

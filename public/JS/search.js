@@ -43,16 +43,13 @@ searchBox.addEventListener('click',async (event)=>{
     let searchTerm=searchBox.value;
     searchResults.innerHTML=''
     data=await axios.get(`/search?q=${searchTerm}`)
-    console.log(data)
     insertResults(data.data)
 })
 searchBox.addEventListener('keyup',async (ev)=>{
     searchResults.style.visibility='visible';
     let searchTerm=searchBox.value;
-    console.log(searchTerm)
     searchResults.innerHTML=''
     data=await axios.get(`/search?q=${searchTerm}`)
-    console.log(data)
     insertResults(data.data)  
 })
 

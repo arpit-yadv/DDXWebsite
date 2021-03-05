@@ -48,7 +48,6 @@ module.exports.updateProduct=async(req,res)=>{
 module.exports.deleteProduct=async(req,res)=>{
   let foundProduct = await Product.findByIdAndDelete(req.params.id);
   let deleteImages = foundProduct.images;
-  console.log(foundProduct.images);
   for (image of deleteImages) {
     //deleting images from cloudinary by using inbuilt method cloudinary.uploader.destroy(filename)
     await cloudinary.uploader.destroy(image.filename);

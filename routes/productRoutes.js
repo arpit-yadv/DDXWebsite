@@ -23,7 +23,6 @@ router.get('/category/latest',catchAsync(async(req,res)=>{
   let tilldate = Date.now();
   tilldate = tilldate.toISOString();
   let products= await  Product.find({date:{$gte:tilldate}})
-  console.log(products);
   res.send(products);
 }))
 router.get('/category/:cat',catchAsync(product.renderCategoryProducts));
