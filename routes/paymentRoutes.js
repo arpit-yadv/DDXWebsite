@@ -2,7 +2,7 @@ const express=require('express')
 const router=express.Router()
 const Razorpay=require('razorpay')
 const Product=require('../models/productSchema')
-const Order=require('../models/orderSchema')
+const Order=require('../models/OrderSchema')
 const payment= require('../controllers/payments');
 const {User}=require('../models/userSchema')
 
