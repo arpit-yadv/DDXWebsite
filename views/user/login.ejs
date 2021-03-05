@@ -1,0 +1,47 @@
+<%-include('../partials/header')%>
+<%- include('../partials/navbar') %>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+ <link rel="stylesheet" type="text/css" href="/stylesheets/fbg.css">
+<div class="container-fluid">
+
+
+  <h1 class="text-center mt-5">Login</h1>
+  <div class="row justify-content-center">
+  <form action="/auth/facebook">
+    <button class="loginBtn loginBtn--facebook">
+      Login with Facebook
+    </button>
+  </form>
+  <form action="/auth/google">
+    <button class="loginBtn loginBtn--google">
+      Login with Google
+    </button>
+  
+  </form>
+  </div>
+  <div class="row justify-content-center">
+    <div class=" col-sm-12 col-md-6 col-xl-4">
+      <form class="needs-validation" action="/login" method="POST" novalidate>
+      <div class="m-2">
+          <label class="form-label" for="username">UserName</label>
+          <input class="form-control" type="text" name="username" id="username" placeholder="username" autofocus required>
+      </div>
+      <div class="m-2">
+          <label class="form-label" for="password">Password</label>
+          <input class="form-control" type="password" name="password" id="password" placeholder="password" required>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block mr-3 mt-4 px-4 ">Login</button>
+  </form>
+  </div>
+
+  </div>
+</div>
+  
+
+ 
+
+
+
+
+<%-include('../partials/footer')%>
