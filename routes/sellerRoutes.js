@@ -1,5 +1,4 @@
 const { isLoggedIn, isSeller,isOwner } = require('../middleware');
-const Order = require('../models/orderSchema');
 const router = require('express').Router();
 const Product = require('../models/productSchema');
 const {User} = require('../models/userSchema');
