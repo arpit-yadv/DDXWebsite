@@ -73,7 +73,7 @@ app.use(helmet());
 
 const scriptSrcUrls = [
     "https://checkout.razorpay.com",
-    "http://code.jquery.com/jquery-1.7.1.min.js",
+    "https://code.jquery.com/jquery-1.7.1.min.js",
     "https://stackpath.bootstrapcdn.com",
     "https://kit.fontawesome.com",
     "https://cdnjs.cloudflare.com",
