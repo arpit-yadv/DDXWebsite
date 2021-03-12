@@ -86,11 +86,13 @@ const styleSrcUrls = [
     "https://stackpath.bootstrapcdn.com",
     "https://fonts.googleapis.com",
     "https://use.fontawesome.com",
+    "https://cdnjs.cloudflare.com"
 ];
 const connectSrcUrls = [];
 const fontSrcUrls = [
     "https://maxcdn.bootstrapcdn.com",
     "https://fonts.gstatic.com",
+    "https://cdnjs.cloudflare.com"
 ];
 app.use(
     helmet.contentSecurityPolicy({
